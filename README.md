@@ -11,15 +11,15 @@ A React Native mobile application that displays **current weather** and **latest
 - Displays temperature, weather condition, and a 3-day forecast.
 - Fetches the latest news headlines based on user preferences (using NewsAPI).
 - Filters news based on current weather:
-  - 🧊 **Cold**: Shows depressing news.
-  - 🔥 **Hot**: Shows fear-inducing news.
-  - 🌤️ **Cool**: Shows uplifting and happy news.# 🌦️ Weather & News App
+  -  **Cold**: Shows depressing news.
+  -  **Hot**: Shows fear-inducing news.
+  -  **Cool**: Shows uplifting and happy news.# 🌦️ Weather & News App
 
 A React Native mobile application that displays **current weather** and **latest news headlines**, with dynamic **news filtering based on weather moods**. Users can customize their temperature unit and preferred news categories via the settings screen.
 
 ---
 
-## 📱 Features
+##  Features
 
 ### ✅ Home Screen
 - Shows current weather based on the user's location (via **Expo Location**).
