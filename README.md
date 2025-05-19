@@ -73,11 +73,12 @@ Free signup: https://newsapi.org
 https://github.com/user-attachments/assets/5b23537a-7ca9-446b-a084-2443c977372d
 
 
-![Image](https://github.com/user-attachments/assets/0587879c-627f-4b00-ac45-d4554386166e)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0587879c-627f-4b00-ac45-d4554386166e" width="300" />
+  <img src="https://github.com/user-attachments/assets/4131903a-0a1d-4611-b5aa-8494f2ee889c" width="300" />
+  <img src="https://github.com/user-attachments/assets/f276c55d-bda2-4d71-aa24-3e18215b0261" width="300" />
+</p>
 
-![Image](https://github.com/user-attachments/assets/4131903a-0a1d-4611-b5aa-8494f2ee889c)
-
-![Image](https://github.com/user-attachments/assets/f276c55d-bda2-4d71-aa24-3e18215b0261)
 
 
 
