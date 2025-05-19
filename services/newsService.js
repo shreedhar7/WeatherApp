@@ -11,7 +11,7 @@ export const fetchFilteredNews = async (query) => {
         q: query,
         token: NEWS_API_KEY,
         lang: 'en',
-        max: 10,
+        max: 20,
       },
     });
     return response.data.articles;
