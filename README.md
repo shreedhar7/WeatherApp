@@ -62,14 +62,14 @@ npx expo start
 
 🌐 APIs Used
 1. WeatherAPI
-Endpoint: https://api.weatherapi.com/v1/forecast.json
+Endpoint: [https://api.weatherapi.com/v1/forecast.json](https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${lat},${lon}&days=5)
 
-Free signup: https://www.weatherapi.com
+
 
 2. NewsAPI
-Endpoint: https://newsapi.org/v2/top-headlines
+Endpoint: https://gnews.io/api/v4/search 
 
-Free signup: https://newsapi.org
+
 
 
 https://github.com/user-attachments/assets/5b23537a-7ca9-446b-a084-2443c977372d
