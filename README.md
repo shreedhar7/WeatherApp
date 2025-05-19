@@ -24,11 +24,20 @@ A React Native mobile application that displays **current weather** and **latest
 
 ## 🔧 Tech Stack
 
+<<<<<<< HEAD
 - **React Native** (Expo)
 - **WeatherAPI** for weather data
 - **NewsAPI** for news headlines
 - **AsyncStorage** for persistent user preferences
 - **React Navigation** for navigation
+=======
+- **React Native (Expo)**
+- **WeatherAPI** – for real-time weather data
+- **NewsAPI** – for latest news headlines
+- **Expo Location** – to access user’s current location
+- **AsyncStorage** – to persist user settings
+- **React Navigation** – for screen navigation
+>>>>>>> d1cb281420e4adc6ce646e6ed0aee968b6827186
 
 ---
 

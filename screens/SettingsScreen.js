@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import {
   View,
   Text,
@@ -23,11 +23,12 @@ const availableCategories = [
 
 const SettingsScreen = () => {
   const {
-    temperatureUnit,
-    setTemperatureUnit,
-    selectedCategories,
-    setSelectedCategories,
-  } = useContext(SettingsContext);
+  temperatureUnit,
+  setTemperatureUnit,
+} = useContext(SettingsContext);
+
+const [selectedCategories, setSelectedCategories] = useState(['General']);
+
 
   const toggleTemperatureUnit = () => {
     setTemperatureUnit(temperatureUnit === 'C' ? 'F' : 'C');
