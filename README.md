@@ -35,29 +35,23 @@ A React Native mobile application that displays **current weather** and **latest
 ## 🚀 Setup & Installation
 
 1. **Clone the repository**:
-   ```bash
+   
    git clone https://github.com/yourusername/weather-news-app.git
    cd weather-news-app
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 Add your API keys:
 
 Create a file named .env or directly add keys in weatherService.js and newsService.js:
 
-ini
-Copy
-Edit
+
 WEATHER_API_KEY=your_weatherapi_key
 NEWS_API_KEY=your_newsapi_key
 Run the app:
 
-bash
-Copy
-Edit
+
 npx expo start
 🌐 APIs Used
 1. WeatherAPI
