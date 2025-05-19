@@ -26,26 +26,14 @@ A React Native mobile application that displays **current weather** and **latest
 
 ## 🔧 Tech Stack
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **React Native** (Expo)
-- **WeatherAPI** for weather data
-- **NewsAPI** for news headlines
-- **AsyncStorage** for persistent user preferences
-- **React Navigation** for navigation
-=======
-=======
->>>>>>> d6ae1c65914f5207d461c02afe493d1947bbf257
+
 - **React Native (Expo)**
 - **WeatherAPI** – for real-time weather data
 - **NewsAPI** – for latest news headlines
 - **Expo Location** – to access user’s current location
 - **AsyncStorage** – to persist user settings
 - **React Navigation** – for screen navigation
-<<<<<<< HEAD
->>>>>>> d1cb281420e4adc6ce646e6ed0aee968b6827186
-=======
->>>>>>> d6ae1c65914f5207d461c02afe493d1947bbf257
+
 
 ---
 
@@ -74,14 +62,14 @@ npx expo start
 
 🌐 APIs Used
 1. WeatherAPI
-Endpoint: https://api.weatherapi.com/v1/forecast.json
+Endpoint: [https://api.weatherapi.com/v1/forecast.json](https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${lat},${lon}&days=5)
 
-Free signup: https://www.weatherapi.com
+
 
 2. NewsAPI
-Endpoint: https://newsapi.org/v2/top-headlines
+Endpoint: https://gnews.io/api/v4/search 
 
-Free signup: https://newsapi.org
+
 
 
 https://github.com/user-attachments/assets/5b23537a-7ca9-446b-a084-2443c977372d
