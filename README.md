@@ -9,7 +9,7 @@ A React Native mobile application that displays **current weather** and **latest
 
 ### ✅ Home Screen
 - Shows current weather based on the user's location (via **Expo Location**).
-- Displays temperature, weather condition, and a 3-day forecast.
+- Displays temperature, weather condition, and a 5-day forecast.
 - Fetches the latest news headlines based on user preferences (using **NewsAPI**).
 - Filters news based on current weather:
   -  **Cold**: Shows depressing news.
@@ -53,7 +53,7 @@ WEATHER_API_KEY=your_weatherapi_key
 NEWS_API_KEY=your_newsapi_key
 
 
-4. Run the App
+4. Run the App : 
 npx expo start
 
 
