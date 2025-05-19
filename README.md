@@ -17,7 +17,8 @@ A React Native mobile application that displays **current weather** and **latest
   -  **Cool**: Shows uplifting and happy news. ( Either of that , then return " Happy Mood News" )
 
 ### ✅ Settings Screen
-- Choose temperature units: Celsius or Fahrenheit.
+-  Allow users to select their preferred units for temperature
+ (Celsius/Fahrenheit)
 - Select preferred news categories (e.g., Business, Technology, Sports).
 
 
