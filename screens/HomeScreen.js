@@ -38,14 +38,8 @@ const HomeScreen = () => {
         );
         setWeather(weatherData);
 
-        const moodQuery = getMoodQuery(weatherData.current.temp_c);
-        const categoryQuery =
-          selectedCategories.length > 0 ? selectedCategories.join(" OR ") : "";
-        const fullQuery = `${moodQuery}${
-          categoryQuery ? " AND (" + categoryQuery + ")" : ""
-        }`;
-
-        const newsData = await fetchFilteredNews(fullQuery);
+        const moodQuery = getMoodQuery(weatherData.current.temp_c); // e.g., "depression", "fear", "happiness"
+        const newsData = await fetchFilteredNews(moodQuery);
         setNews(newsData);
 
         setLoading(false);
@@ -78,14 +72,15 @@ const HomeScreen = () => {
   };
 
   if (loading || !weather) {
-  return (
-    <SafeAreaView style={styles.loadingContainer}>
-      <ActivityIndicator size="large" color="#4682B4" />
-      <Text style={styles.loadingText}>Fetching your personalized weather and news...</Text>
-    </SafeAreaView>
-  );
-}
-
+    return (
+      <SafeAreaView style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#4682B4" />
+        <Text style={styles.loadingText}>
+          Fetching your personalized weather and news...
+        </Text>
+      </SafeAreaView>
+    );
+  }
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -94,10 +89,8 @@ const HomeScreen = () => {
         <Text style={styles.headerText}>Weather & News App</Text>
       </View>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
-        {/* Weather Card */}
         <WeatherCard weather={weather} temperatureUnit={temperatureUnit} />
 
-        {/* News Mood & Cards */}
         <NewsCard
           weather={weather}
           news={news}
@@ -120,24 +113,23 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
- headerContainer: {
-  backgroundColor: '#4682B4',
-  paddingTop: 48,      // increase top padding to avoid notch overlap
-  paddingBottom: 14,
-  paddingHorizontal: 20,
-  alignItems: 'center',
+  headerContainer: {
+    backgroundColor: "#4682B4",
+    paddingTop: 48,
+    paddingBottom: 14,
+    paddingHorizontal: 20,
+    alignItems: "center",
 
-  elevation: 4,
-},
+    elevation: 4,
+  },
 
-
-headerText: {
-  fontSize: 26,
-  fontWeight: '300',   // lighter weight
-  color: '#f0f8ff',    // a lighter off-white to soften contrast
-  letterSpacing: 2,
-  textTransform: 'uppercase', // uppercase for style
-},
+  headerText: {
+    fontSize: 26,
+    fontWeight: "300",
+    color: "#f0f8ff",
+    letterSpacing: 2,
+    textTransform: "uppercase",
+  },
   scrollContainer: {
     padding: 10,
     paddingBottom: 60,
@@ -174,30 +166,29 @@ headerText: {
     fontSize: 14,
   },
   loadingContainer: {
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: "#e6f0fa",
-  padding: 20,
-},
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#e6f0fa",
+    padding: 20,
+  },
 
-loadingText: {
-  marginTop: 20,
-  fontSize: 16,
-  color: "#333",
-  fontWeight: "500",
-  textAlign: "center",
-},
+  loadingText: {
+    marginTop: 20,
+    fontSize: 16,
+    color: "#333",
+    fontWeight: "500",
+    textAlign: "center",
+  },
 
-quoteText: {
-  marginTop: 12,
-  fontSize: 14,
-  fontStyle: "italic",
-  color: "#777",
-  textAlign: "center",
-  paddingHorizontal: 20,
-},
-
+  quoteText: {
+    marginTop: 12,
+    fontSize: 14,
+    fontStyle: "italic",
+    color: "#777",
+    textAlign: "center",
+    paddingHorizontal: 20,
+  },
 });
 
 export default HomeScreen;
